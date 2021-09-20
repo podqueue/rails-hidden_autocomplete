@@ -15,7 +15,7 @@ class NavigationTest < ActionDispatch::IntegrationTest
     (1..3).each do |i|
       assert_select "input#article_written_on_#{i}i[type=\"hidden\"][autocomplete=\"off\"]"
     end
-		assert_select '#form_with_test > input[type="hidden"][name="authenticity_token"][autocomplete="off"]'
+    assert_select '#form_with_test > input[type="hidden"][name="authenticity_token"][autocomplete="off"]'
     assert_select '#form_with_test > input[type="hidden"][name="hidden_field_test"][autocomplete="off"]'
   end
 end
