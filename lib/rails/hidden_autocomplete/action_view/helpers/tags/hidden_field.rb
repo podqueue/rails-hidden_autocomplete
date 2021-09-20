@@ -3,7 +3,7 @@ module Rails
     module ActionView
       module Helpers
         module Tags
-          class HiddenField
+          module HiddenField
             def render
               @options[:autocomplete] = 'off'
               super
