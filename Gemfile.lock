@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails-hidden_autocomplete (0.2.0)
+    rails-hidden_autocomplete (0.2.1)
       rails (~> 6.1)
 
 GEM
