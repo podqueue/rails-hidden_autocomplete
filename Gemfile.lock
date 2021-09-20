@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails-hidden_autocomplete (0.1.0)
+    rails-hidden_autocomplete (0.2.0)
       rails (~> 6.1)
 
 GEM
@@ -85,8 +85,6 @@ GEM
     minitest (5.14.4)
     nio4r (2.5.8)
     nokogiri (1.12.4-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.12.4-x86_64-linux)
       racc (~> 1.4)
     racc (1.5.2)
     rack (2.2.3)
