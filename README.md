@@ -3,6 +3,8 @@ This is a Rails plugin to add `autocomplete="off"` to all hidden form inputs gen
 
 You can read the announcement blog post here: <https://blog.podqueue.fm/2021/09/19/giving_back_to_rails_with_rails-hidden_autocomplete/>
 
+This work has also been refactored into a Rails PR: <https://github.com/rails/rails/pull/43280>
+
 ## Usage
 Using this plugin from a Rails 6.1 application should automatically override Rails methods which generate hidden form inputs to add an `autocomplete="off"` attribute.
 

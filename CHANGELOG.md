@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v0.4.0
+
+* Add `autocomplete="off"` to `utf8_enforcer_tag`
+
 ## v0.3.0
 
 * Switch from `Rails.application.reloader.to_prepare` to `ActiveSupport.on_load(:action_view)`
