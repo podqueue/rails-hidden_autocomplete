@@ -4,6 +4,7 @@
 <%= button_to 'button_to_test', root_path, remote: true, form: { id: 'button_to_test', 'data-type': 'json' } %>
 <%= date_select("article", "written_on", use_hidden: true) %>
 <%= check_box('post', 'secret') %>
+<%= collection_select("post", "to_s", [1, 2, 3], "to_s", "to_s", { include_blank: true }, { multiple: true }) %>
 <%= form_with url: root_path, html: { id: 'form_with_test' } do |f| %>
   <%= utf8_enforcer_tag %>
   <%= f.hidden_field :hidden_field_test, value: 'example_value' %>
