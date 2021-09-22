@@ -17,6 +17,7 @@ class NavigationTest < ActionDispatch::IntegrationTest
     end
     assert_select 'input[name="post[secret]"][type="hidden"][value="0"][autocomplete="off"]'
     assert_select 'input[name="post[to_s][]"][type="hidden"][value=""][autocomplete="off"]'
+    assert_select '#form_with_test > input[type="hidden"][name="_method"][value="patch"][autocomplete="off"]'
     assert_select '#form_with_test > input[type="hidden"][name="authenticity_token"][autocomplete="off"]'
     assert_select '#form_with_test > input[type="hidden"][name="hidden_field_test"][autocomplete="off"]'
     assert_select '#form_with_test > input[name="utf8"][type="hidden"][autocomplete="off"]'
