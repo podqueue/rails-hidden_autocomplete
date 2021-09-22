@@ -3,7 +3,7 @@
 <%= hidden_field_tag 'hidden_field_tag_test', 'example' %>
 <%= button_to 'button_to_test', root_path, remote: true, form: { id: 'button_to_test', 'data-type': 'json' } %>
 <%= date_select("article", "written_on", use_hidden: true) %>
-<br/>
+<%= check_box('post', 'secret') %>
 <%= form_with url: root_path, html: { id: 'form_with_test' } do |f| %>
   <%= utf8_enforcer_tag %>
   <%= f.hidden_field :hidden_field_test, value: 'example_value' %>
