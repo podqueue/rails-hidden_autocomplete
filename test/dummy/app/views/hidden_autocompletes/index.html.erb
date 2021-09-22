@@ -5,6 +5,7 @@
 <%= date_select("article", "written_on", use_hidden: true) %>
 <br/>
 <%= form_with url: root_path, html: { id: 'form_with_test' } do |f| %>
+  <%= utf8_enforcer_tag %>
   <%= f.hidden_field :hidden_field_test, value: 'example_value' %>
   <%= f.submit %>
 <% end %>
